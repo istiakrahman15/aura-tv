@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;850;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-neutral-855: #1c1c1c;
+  --color-neutral-980: #080808;
+}
+
+/* Custom Scrollbar concealment utility for horizontal carousels */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Base resets & atmospheric background settings */
+body {
+  background-color: #060606;
+  background-image: radial-gradient(circle at 50% 0%, #0c1524 0%, #060606 65%);
+  background-attachment: fixed;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+/* Sleek scrollbar styling for category selectors and cards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
