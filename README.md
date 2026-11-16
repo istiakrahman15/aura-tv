@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Aura TV
 
-# Run and deploy your AI Studio app
+Aura TV is an ultra-premium live TV streaming platform with a high-fidelity glassmorphism interface, built with React, Vite, Tailwind CSS, and HLS.js.
 
-This contains everything you need to run your app locally.
+Live demo: https://aura-tv-seven.vercel.app
 
-View your app in AI Studio: https://ai.studio/apps/d86702f6-8298-4480-a69d-4552e0b5a920
+## Features
+
+- HLS (m3u8) live TV player
+- Dynamic channel categories
+- Search across channels
+- Favorites system
+- Continue Watching tracking
+- Responsive, mobile-first design
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
-
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+   ```bash
+   npm install
+   ```
+
+2. Copy [`.env.example`](.env.example) to `.env.local` and set your `GEMINI_API_KEY`:
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+3. Start the dev server:
+
+   ```bash
+   npm run dev
+   ```
+
+   The app runs at http://localhost:3000.
